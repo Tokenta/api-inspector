@@ -1,0 +1,49 @@
+{
+  "name": "@tokenta/api-inspector",
+  "version": "0.1.0",
+  "description": "Open-source toolkit for verifying LLM API providers. Detect model identity mismatches, rate-limit discrepancies, quota anomalies, and performance claims. Built by Tokenta.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "api-inspector": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "prepare": "npm run build",
+    "start": "node dist/cli.js",
+    "verify": "node dist/cli.js verify"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "llm",
+    "ai",
+    "api",
+    "verification",
+    "openai",
+    "anthropic",
+    "gemini",
+    "audit",
+    "fingerprint",
+    "tokenta"
+  ],
+  "author": "Tokenta <hello@tokenta.space>",
+  "homepage": "https://github.com/Tokenta/api-inspector#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tokenta/api-inspector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tokenta/api-inspector/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.3"
+  }
+}
